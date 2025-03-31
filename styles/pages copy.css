@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-    /* font-size: 1.5em; */
 }
 
 body {
@@ -13,11 +12,10 @@ body {
 .container {
     display: flex;
     min-height: 100vh;
-    font-size: 1.5em;
 }
 
 .sidebar {
-    width: 500px;
+    width: 250px;
     background-color: #ffffff;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
@@ -61,7 +59,7 @@ body {
 
 .content {
     flex: 1;
-    margin-left: 500px;
+    margin-left: 250px;
 }
 
 .banner {
@@ -95,7 +93,6 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     overflow: hidden;
-    /* font-size: 1.5em; */
 }
 
 .article h1 {
@@ -109,25 +106,13 @@ body {
 .article img {
     object-fit: cover;
     border-radius: 5px;
-    /* margin-bottom: 5px; */
-}
-
-.bla {
-    max-width: 1600px;
-    /* margin: 60px auto; */
-    /* padding: 60px; */
-    background-color: white;
-    border-radius: 10px;
-    /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
-    overflow: hidden;
-    
+    margin-bottom: 20px;
 }
 
 .article p {
     color: #555;
     line-height: 1.6;
     margin-bottom: 30px;
-    text-align: justify;
 }
 
   
@@ -140,12 +125,12 @@ body {
   /* Классы для обтекания */
 .float-left {
     float: left;
-    margin: 10px 15px 10px 0; /* Отступ справа и снизу */
+    margin: 0 15px 10px 0; /* Отступ справа и снизу */
   }
   
 .float-right {
     float: right;
-    margin: 10px 0 10px 15px; /* Отступ слева и снизу */
+    margin: 0 0 10px 15px; /* Отступ слева и снизу */
   }
   
   /* Центрирование изображения (без обтекания) */
