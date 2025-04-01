@@ -13,22 +13,22 @@ body {
 .container {
     display: flex;
     min-height: 100vh;
-    font-size: 1.5em;
+    font-size: 1vw;
 }
 
 .sidebar {
-    width: 500px;
+    width: 20%;
     background-color: #ffffff;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-    position: fixed;
+    position: sticky;
     height: 100%;
 }
 
 .menu-title {
     color: #333;
     margin-bottom: 30px;
-    font-size: 1.5em;
+    font-size: 1vw;
     text-align: center;
 }
 
@@ -61,7 +61,7 @@ body {
 
 .content {
     flex: 1;
-    margin-left: 500px;
+    margin-left: 10%;
 }
 
 .banner {
@@ -88,9 +88,9 @@ body {
 
 
 .article {
-    max-width: 1600px;
-    margin: 60px auto;
-    padding: 60px;
+    max-width: 70%;
+    margin: 2.5%;
+    padding: 2.5%;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -113,21 +113,24 @@ body {
 }
 
 .bla {
-    max-width: 1600px;
+    /* max-width: 70%; */
     /* margin: 60px auto; */
     /* padding: 60px; */
     background-color: white;
     border-radius: 10px;
     /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
     overflow: hidden;
-    
+    margin: 2.5%;
 }
 
 .article p {
+    /* display: flex; */
     color: #555;
     line-height: 1.6;
-    margin-bottom: 30px;
+    margin-bottom: 2.5%;
     text-align: justify;
+    text-indent: 5%;
+    /* white-space: pre-line; */
 }
 
   
@@ -151,16 +154,20 @@ body {
   /* Центрирование изображения (без обтекания) */
 .center {
     display: block;
-    margin: 10px auto; /* Центрирует и добавляет отступ сверху/снизу */
+    margin: 0px auto 2.5% auto; /* Центрирует и добавляет отступ сверху/снизу */
   }
 
   /* Общие классы для размеров */
 .img-small {
+    /* width: 100%; */
     width: 450px;
     height: auto;
   }
   
 .img-medium {
-    width: 750px;
+    width: 720px;
+    /* width: 100%; */
     height: auto;
+    /* margin-bottom: 5%; */
   }
+
