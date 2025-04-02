@@ -56,15 +56,15 @@ body {
     background-color: #e0e0e0;
     color: #222;
 }
-
+/* 
 .content {
     flex: 1;
     margin-left: 0;
-}
+} */
 
-.banner {
+/* .banner {
     height: 100vh;
-    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('https://images.unsplash.com/photo-1543269665-bd1bc9e6f296');
+    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('/src/img/donetsk-3.jpg');
     /* ПОМЕНЯТЬ КАРТИНКУ!!! */
     background-size: cover;
     background-position: center;
@@ -76,7 +76,7 @@ body {
 .banner-overlay {
     text-align: center;
     padding: 20px;
-}
+} */
 
 .project-title {
     font-size: 3em;
