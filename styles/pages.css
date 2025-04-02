@@ -32,6 +32,26 @@ body {
     text-align: center;
 }
 
+/* Скрываем меню по умолчанию на мобильных устройствах */
+.menu-list {
+    display: none;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-toggle {
+    display: none;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
 .menu-list {
     list-style: none;
 }
@@ -60,8 +80,11 @@ body {
 }
 
 .content {
-    flex: 1;
-    margin-left: 10%;
+    /* flex: 1;
+    margin-left: 5%; */
+    display: flex;
+    justify-content: space-between; /* Распределяет изображения с равными отступами */
+    align-items: center; /* Выравнивает изображения по центру по вертикали */
 }
 
 .banner {
@@ -170,4 +193,111 @@ body {
     height: auto;
     /* margin-bottom: 5%; */
   }
+
+.str_img {
+    display: flex;
+    justify-content: space-between; /* Распределяет изображения с равными отступами */
+    align-items: center; /* Выравнивает изображения по центру по вертикали */
+    margin: 5px 5px 5px 5px; /* Отступы сверху и снизу */
+}
+
+.str_img img {
+    max-width: 48%; /* Устанавливает ширину изображений, чтобы они помещались в строку */
+    height: 200px; /* Сохраняет пропорции изображений */
+    border-radius: 5px; /* Добавляет скругление углов */
+}
+
+/* Адаптация для планшетов (ширина экрана до 768px) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+        box-shadow: none;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .menu-title {
+        font-size: 1.2em;
+    }
+
+    .menu-list a {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    .article {
+        padding: 20px;
+    }
+
+    .img-small {
+        width: 100%;
+    }
+
+    .img-medium {
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-list {
+        display: none; /* Скрыто по умолчанию */
+    }
+
+    .menu-list.active {
+        display: flex; /* Показываем меню при активации */
+    }
+}
+
+/* Адаптация для мобильных устройств (ширина экрана до 480px) */
+@media (max-width: 480px) {
+    .menu-title {
+        font-size: 1em;
+    }
+
+    .menu-list a {
+        font-size: 0.8em;
+        padding: 6px;
+    }
+
+    .article h1 {
+        font-size: large;
+    }
+
+    .article p {
+        font-size: 0.9em;
+    }
+
+    .float-left, .float-right {
+        float: none;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .center {
+        margin: 10px auto;
+    }
+}
+
+/* Показываем меню на десктопах */
+@media (min-width: 769px) {
+    .menu-list {
+        display: flex; /* Показываем меню в виде горизонтального или вертикального списка */
+        flex-direction: column; /* Оставляем вертикальное расположение */
+    }
+
+    .menu-toggle {
+        display: none; /* Скрываем кнопку на больших экранах */
+    }
+}
+
 
