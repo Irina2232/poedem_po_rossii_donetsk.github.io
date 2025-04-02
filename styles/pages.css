@@ -23,6 +23,7 @@ body {
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     position: sticky;
     height: 100%;
+    border-radius: 1em;
 }
 
 .menu-title {
@@ -196,7 +197,7 @@ body {
 
 .str_img {
     display: flex;
-    justify-content: space-between; /* Распределяет изображения с равными отступами */
+    justify-content: center; /* Распределяет изображения с равными отступами */
     align-items: center; /* Выравнивает изображения по центру по вертикали */
     margin: 5px 5px 5px 5px; /* Отступы сверху и снизу */
 }
@@ -218,6 +219,7 @@ body {
         position: relative;
         height: auto;
         box-shadow: none;
+        border-radius: 1em;
     }
 
     .content {
@@ -261,6 +263,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        border-radius: 1em;
     }
 
     .menu-header {
@@ -282,6 +285,13 @@ body {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    .menu-logo {
+        margin: 0;
+        position: absolute;
+        left: 85%;
+        /* transform: translateX(-50%); */
     }
 
     .menu-toggle {
