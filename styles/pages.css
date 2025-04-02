@@ -113,7 +113,7 @@ body {
 .banner {
     width: 80vw;  /* Занимает всю ширину экрана */
     height: 100vh; /* Занимает всю высоту экрана */
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('src/img/donetsk-3.jpg');
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../src/img/donetsk-3.jpg');
     background-size: cover;  /* Растягивает фон без искажений */
     background-position: center; /* Центрирует изображение */
     background-repeat: no-repeat; /* Запрещает повторение */
