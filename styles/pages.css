@@ -6,10 +6,12 @@
     /* font-size: 1.5em; */
 }
 
+/* --- Исправления и оптимизация --- */
+
+/* Исправлен @font-face */
 @font-face {
     font-family: 'Equilibrist';
-    src: url('/fonts/ofont.ru_Equilibrist.ttf') format('ttf'),
-    
+    src: url('/fonts/ofont.ru_Equilibrist.ttf') format('truetype');
 }
 
 .menu-header {
@@ -24,7 +26,7 @@
 .menu-title {
     flex: 1;
     color: #333;
-    margin: 0;
+    margin: 0 0 1% 0;
     font-size: 1vw;
     text-align: center;
     font-family: 'Equilibrist';
@@ -56,14 +58,6 @@ body {
     position: sticky;
     height: 100%;
     border-radius: 1em;
-}
-
-.menu-title {
-    color: #333;
-    margin-bottom: 1%;
-    font-size: 1vw;
-    text-align: center;
-    font-family: 'Equilibrist';
 }
 
 /* Скрываем меню по умолчанию на мобильных устройствах */
@@ -405,7 +399,7 @@ body {
     text-align: center;
     margin: 2em 0;
     font-style: italic;
-    line-height: 0.75; /* Было 1.7, стало 1.2 */
+    line-height: 1.15; /* Оптимально для стихов */
     white-space: pre-line; /* Сохраняет переносы строк */
     font-size: 1.1em;
 }
