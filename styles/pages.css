@@ -420,4 +420,10 @@ body {
     background: #f0f0f0;
 }
 
+.subtitle {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+
 
