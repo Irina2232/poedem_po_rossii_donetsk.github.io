@@ -404,4 +404,20 @@ body {
     font-size: 1.1em;
 }
 
+/* Добавьте в styles/pages.css */
+.terrikon-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 1em;
+}
+.terrikon-table th, .terrikon-table td {
+    border: 1px solid #bbb;
+    padding: 8px 12px;
+    text-align: left;
+}
+.terrikon-table th {
+    background: #f0f0f0;
+}
+
 
