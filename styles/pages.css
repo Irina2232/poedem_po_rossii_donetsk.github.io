@@ -397,9 +397,9 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 2em 0;
+    margin: 1em 0;
     font-style: italic;
-    line-height: 1.15; /* Оптимально для стихов */
+    line-height: 0.75; /* Оптимально для стихов */
     white-space: pre-line; /* Сохраняет переносы строк */
     font-size: 1.1em;
 }
